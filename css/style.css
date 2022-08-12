@@ -429,7 +429,8 @@ nav {
     
     #page > .main {
     grid-area: main;
-    background-color: rgb(180 235 255 / 71%);
+    background-image: linear-gradient(270deg,#a16ff3,#2dcca7,#3e91cc88,#3e91cc88);
+   /* background-color: rgb(180 235 255 / 71%);*/
     }
     
     #page > .footer {
@@ -816,7 +817,8 @@ nav {
     
     #page > .main {
     grid-area: main;
-    background-color: rgb(180 235 255 / 71%);
+    background-image: linear-gradient(270deg,#a16ff3,#2dcca7,#3e91cc88,#3e91cc88);
+    /*background-color: rgb(180 235 255 / 71%);*/
     }
     
     #page > .footer {
@@ -1220,7 +1222,9 @@ nav {
     
     #page > .main {
     grid-area: main;
-    background-color: rgb(180 235 255 / 71%);
+    background-image: linear-gradient(270deg,#a16ff3,#2dcca7,#3e91cc88,#3e91cc88);
+
+   /* background-color: rgb(180 235 255 / 71%);*/
     }
     
     #page > .footer {
