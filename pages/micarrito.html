@@ -5,6 +5,7 @@
     <!-- Icono para la pestaña-->
     <link rel="shortcut icon" href="../img/logo_petshop.png">
     <!-- Linkeo al css -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animations.css">
     <!-- Titulo de pagina -->
@@ -18,7 +19,7 @@
             <!-- Nav para añadir menu -->
             <nav>
                 <!-- Logo -->
-                <Img class="logoPrincipal" src="../img/logo_petshop.png" alt="Logo PetShop"></Img>
+                <Img class="logoPrincipal  swirl-in-fwd" src="../img/logo_petshop.png" alt="Logo PetShop"></Img>
                 <ul class="menuDerecho">
                     <li><a class="text-focus-in" href="../index.html">Inicio</a></li>
                     <li class="esconderMenu text-focus-in"><a href="contactos.html">Contactos</a></li>
@@ -48,23 +49,27 @@
                 <div class="contenedorProductos">
                     <h2>Mi Carrito</h2>
                     <!-- Tabla de productos -->
-                    <table>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Precio ($)</th>
-                        </tr>
-                        <tr>
-                            <td>Gatarina</td>
-                            <td>12$</td>
-                        </tr>
-                        <tr>
-                            <td>Casa xehagonal</td>
-                            <td>35$</td>
-                        </tr>
-                        <tr>
-                            <td>Juguete para morder</td>
-                            <td>7$</td>
-                        </tr>
+                    <table class="table table-sm table-success table-striped table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Precio ($)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row">Gatarina</td>
+                                <td scope="row">12$</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Casa xehagonal</td>
+                                <td scope="row">35$</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">Juguete para morder</td>
+                                <td scope="row">7$</td>
+                            </tr>
+                        </tbody>
                         </table>
                 </div>
                 <!-- Formas de pago -->
@@ -75,14 +80,17 @@
                     <img class="imgFormaPago" src="../img/paypal.png" alt="Paypal" style="width:32px;">
                     <img class="imgFormaPago" src="../img/billetes-de-banco.png" alt="Dinero" style="width:32px;">
                     <form action="">
-                        <label class="inputLabel" for="Select">Seleccionar</label>
-                        <select name="Select" id="formaPago">
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Seleccionar</option>
                             <option value="1">Paypal</option>
                             <option value="2">Visa - Credito</option>
                             <option value="3">Master - Credito</option>
                             <option value="4"> Efectivo en la sucursal</option>
                         </select>
-                        <input class="inputSubmit" type="submit" value="Comprar" >
+                        <div class="d-grid gap-2 mt-2">
+                            <button class="btn btn-primary" type="button">Comprar</button>
+                            
+                          </div>
                     </form>
                 </div>
             </div>
@@ -91,7 +99,7 @@
         <footer class="footer">
             <!--Logo - nombre - slogan-->
             <div class="footerBox footerLogo">
-                <img src="../img/logo_petshop.png" alt="Logo PetShop">
+                <img src="../img/logo_petshop.png" class="swirl-in-fwd" alt="Logo PetShop">
                 
             </div>
             <!-- Link a RRSS-->
@@ -119,5 +127,6 @@
             </div>
         </footer>
     </section>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

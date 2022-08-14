@@ -5,6 +5,7 @@
     <!-- Icono para la pestaña-->
     <link rel="shortcut icon" href="../img/logo_petshop.png">
     <!-- Linkeo al css -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/animations.css">
     <!-- Titulo de pagina -->
@@ -17,7 +18,7 @@
                 <!-- Nav para añadir menu -->
                 <nav>
                     <!-- Logo -->
-                    <Img class="logoPrincipal" src="../img/logo_petshop.png" alt="Logo PetShop"></Img>
+                    <Img class="logoPrincipal  swirl-in-fwd" src="../img/logo_petshop.png" alt="Logo PetShop"></Img>
                     <ul class="menuDerecho">
                         <li><a class="text-focus-in" href="../index.html">Inicio</a></li>
                         <li class="esconderMenu text-focus-in"><a href="contactos.html">Contactos</a></li>
@@ -55,12 +56,16 @@
                     <!-- formulario de busqueda para los productos -->
                     <div class="contenedorBusqueda">
                         <h2 class="subtitulo">Productos</h2>
-                        <div class="formClass">
-                            <form action="">
-                                <label class="inputLabel" for="productos">Busqueda</label>
-                                <input class="input" type="text" name="productos">
-                                <input class="inputSubmit" type="submit">
-                            </form>
+                        <div class="container ">
+                            <form class="row g-3 ">
+                                <div class="col-6">
+                                  <label for="texto busqueda" class="visually-hidden">Productos</label>
+                                  <input type="text" class="form-control" id="Productos" placeholder="Productos">
+                                </div>
+                                <div class="col-6">
+                                  <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+                                </div>
+                              </form>
                         </div>
                     </div>
                 </section>
@@ -73,7 +78,7 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Perrarina Dog Show</h4>
                             <h6 class="precioProducto">7$</h6>
-                            <button class="botonProducto">Añadir</button>
+                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
                         </div>
                     </div>
                     <div class="producto">
@@ -81,7 +86,7 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Gatarina Cat Show</h4>
                             <h6 class="precioProducto">7$</h6>
-                            <button class="botonProducto">Añadir</button>
+                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
                         </div>
                     </div>
                     <div class="producto">
@@ -89,7 +94,7 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Perrarina Dog Show</h4>
                             <h6 class="precioProducto">7$</h6>
-                            <button class="botonProducto">Añadir</button>
+                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
                         </div>
                     </div>
                     <div class="producto">
@@ -97,7 +102,7 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Gatarina Cat Show</h4>
                             <h6 class="precioProducto">15$</h6>
-                            <button class="botonProducto">Añadir</button>
+                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
                         </div>
                     </div>
                     <div class="producto">
@@ -105,7 +110,7 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Perrarina Dog Show</h4>
                             <h6 class="precioProducto">8$</h6>
-                            <button class="botonProducto">Añadir</button>
+                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
                         </div>
                     </div>
                     <div class="producto">
@@ -113,7 +118,7 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Gatarina Cat Show</h4>
                             <h6 class="precioProducto">9$</h6>
-                            <button class="botonProducto">Añadir</button>
+                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
                         </div>
                     </div>
                     <div class="producto">
@@ -121,7 +126,7 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Perrarina Dog Show</h4>
                             <h6 class="precioProducto">6$</h6>
-                            <button class="botonProducto">Añadir</button>
+                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
                         </div>
                     </div>
                     <div class="producto">
@@ -129,7 +134,7 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Gatarina Cat Show</h4>
                             <h6 class="precioProducto">10$</h6>
-                            <button class="botonProducto">Añadir</button>
+                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
                         </div>
                     </div>
     
@@ -142,7 +147,7 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Juguetes para morder</h4>
                             <h6 class="precioProducto">7$</h6>
-                            <button class="botonProducto">Añadir</button>
+                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
                         </div>
                     </div>
                     <div class="producto prod2">
@@ -150,7 +155,7 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Casa hexagonal</h4>
                             <h6 class="precioProducto">45$</h6>
-                            <button class="botonProducto">Añadir</button>
+                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
                         </div>
                     </div>
                     <div class="producto">
@@ -158,7 +163,7 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Casa hexagonal para gato</h4>
                             <h6 class="precioProducto">24$</h6>
-                            <button class="botonProducto">Añadir</button>
+                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
                         </div> 
                     </div>
                     <div class="producto">
@@ -166,7 +171,7 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Casa para perro</h4>
                             <h6 class="precioProducto">20$</h6>
-                            <button class="botonProducto">Añadir</button>
+                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
                         </div>    
                     </div>
                 </div>
@@ -176,7 +181,7 @@
             <footer class="footer">
                 <!--Logo - nombre - slogan-->
                 <div class="footerBox footerLogo">
-                    <img src="../img/logo_petshop.png" alt="Logo PetShop">
+                    <img src="../img/logo_petshop.png" class=" swirl-in-fwd" alt="Logo PetShop">
                     
                 </div>
                 <!-- Link a RRSS-->
@@ -204,5 +209,6 @@
                 </div>
             </footer>
     </section>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
