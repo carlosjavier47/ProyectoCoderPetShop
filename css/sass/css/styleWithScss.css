@@ -1,0 +1,1254 @@
+/* STYLES WITH SCSS  */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+.contenedorExtends, .contenedorFormaPago, .contenedorProductos, .contenedorBusqueda {
+  float: left;
+  background-color: rgb(0, 107, 139);
+  color: #fff;
+  border-radius: 10px;
+}
+
+/******* MEDIA SCREEN Y GRID AREA ******/
+@media screen and (max-width: 625px) {
+  /* Para MOBILE */
+  /* SET GENERAL */
+  .esconderMenu {
+    display: none !important;
+  }
+  .box50 {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+  }
+  .iframe {
+    padding: 15px 15px 25px 15px;
+    width: 360;
+    height: 270px;
+  }
+  /******** IMG Publicidad ********/
+  .contenedorImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgPublicidad {
+    margin: 1% 5%;
+    width: 90%;
+    margin-bottom: 5%;
+  }
+  .imgPublicidad2 {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+  }
+  .imgPublicidad3 {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+  }
+  .imgPublicidadMiCarrito {
+    width: 100%;
+    height: 60vh;
+    margin: 1%;
+    padding: auto;
+  }
+  /* MENU SUPERIOR */
+  .menuDerecho {
+    float: right;
+    margin-right: 5em;
+  }
+  /* INPUT FORMCLASS */
+  .formClass {
+    padding: 10px 5px 5px 5px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  /***************/
+  .maps {
+    width: 70%;
+    text-align: center;
+    margin: 10px;
+    padding: 0.1em;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .pregunta {
+    width: 80%;
+    text-align: center;
+    margin: 10px;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  /* FOOTER */
+  /*ESTILOS PARA EL FOOTER*/
+  footer {
+    display: flex;
+    padding: 15px 15px 5px 25px;
+    background-color: rgb(0, 107, 139);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+  }
+  .footerBox {
+    display: inline-block;
+  }
+  .footerLogo {
+    width: 40%;
+  }
+  .footerRRSS {
+    width: 40%;
+    text-align: left;
+  }
+  .rrss {
+    margin: 2px;
+  }
+  .linkExtras {
+    padding-bottom: 2%;
+    padding-left: 1em;
+    text-align: center;
+  }
+  .footerDirecciones {
+    width: 40%;
+    display: inline-block;
+  }
+  .ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /******** CONTENEDOR CONCEPTOS *******/
+  .contenedorConcepto {
+    margin: 0.5em;
+    padding: 1.8em;
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgb(0, 107, 139);
+    color: #fff;
+  }
+  .contenedorConcepto2 {
+    margin: 5px 5px 5px 10%;
+    padding: 10px;
+    width: 45%;
+    display: inline-block;
+    background-color: rgb(0, 107, 139);
+    color: #fff;
+  }
+  .contenedorConcepto3 {
+    margin: 5px;
+    padding: 10px;
+    width: 45%;
+    display: inline-block;
+    background-color: rgb(0, 107, 139);
+    color: #fff;
+  }
+  /******** CONTENEDOR FORMULARIO *********/
+  .contenedorFormulario {
+    padding: 10px 5px 5px 5px;
+    width: 80%;
+    margin-bottom: 5%;
+    background-color: rgb(0, 107, 139);
+    color: #fff;
+    border-radius: 10px;
+  }
+  /* GRID INICIAL */
+  #page {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head" "main" "foot";
+    grid-template-columns: 1fr;
+  }
+  #page > .header {
+    grid-area: head;
+    background-color: #8ca0ff;
+    height: 80px;
+  }
+  #page > .main {
+    grid-area: main;
+    background-image: linear-gradient(270deg, #a16ff3, #2dcca7, rgba(62, 145, 204, 0.5333333333), rgba(62, 145, 204, 0.5333333333));
+    /* background-color: rgb(180 235 255 / 71%);*/
+  }
+  #page > .footer {
+    grid-area: foot;
+    background-color: rgb(0, 107, 139);
+  }
+  /* GRID PARA MENU E IMAGEN --- INDEX ----*/
+  .vistaPrincipal {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "menu" "foto";
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: start;
+  }
+  #page > .menuLateral {
+    grid-area: menu;
+  }
+  #page > .imgVistaPrincipal {
+    grid-area: foto;
+  }
+  /* GRID PARA PROD MAS VENDIDOS --- INDEX ----*/
+  #seccionMasVendidos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "prod" "prod2" "prod3" "prod4";
+    justify-items: center;
+    align-items: baseline;
+  }
+  .seccionMasVendidos > .prod {
+    grid-area: prod;
+  }
+  .seccionMasVendidos > .prod2 {
+    grid-area: prod2;
+  }
+  .seccionMasVendidos > .prod3 {
+    grid-area: prod3;
+  }
+  .seccionMasVendidos > .prod4 {
+    grid-area: prod4;
+  }
+  /* GRID PARA PROD EN OFERTAS --- INDEX ----*/
+  #seccionOfertas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "prod" "prod2" "prod3" "prod4";
+    justify-items: center;
+    align-items: baseline;
+  }
+  .seccionOfertas > .prod {
+    grid-area: prod;
+  }
+  .seccionOfertas > .prod2 {
+    grid-area: prod2;
+  }
+  .seccionOfertas > .prod3 {
+    grid-area: prod3;
+  }
+  .seccionOfertas > .prod4 {
+    grid-area: prod4;
+  }
+  /* GRID PARA FORMULARIO CON IMAGEN  --- CONTACTOS ----*/
+  .gridContactos {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "concepto" "form" "fotoPromo";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    justify-items: center;
+    align-items: start;
+  }
+  .gridContactos > .contenedorConcepto {
+    grid-area: concepto;
+  }
+  .gridContactos > .contenedorFormulario {
+    grid-area: form;
+  }
+  .gridContactos > .contenedorImg {
+    grid-area: fotoPromo;
+  }
+  /* GRID PARA DEFINICION DE EMPRESA --- NOSOTROS ----*/
+  .gridNosotros {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "empresa" "foto1" "mision" "foto2" "vision";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .gridNosotros > .contenedorEmpresa {
+    grid-area: empresa;
+  }
+  .gridNosotros > .contenedorMision {
+    grid-area: mision;
+  }
+  .gridNosotros > .contenedorVision {
+    grid-area: vision;
+  }
+  .gridNosotros > .contenedorFoto1 {
+    grid-area: foto1;
+  }
+  .gridNosotros > .contenedorFoto2 {
+    grid-area: foto2;
+  }
+  /* GRID PARA CARRITO DE COMPRAS --- MI CARRITO ----*/
+  .gridMiCarrito {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "productos" "formaPago" "foto1";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: start;
+  }
+  .gridMiCarrito > .contenedorFoto1 {
+    grid-area: foto1;
+  }
+  .gridMiCarrito > .contenedorProductos {
+    grid-area: productos;
+  }
+  .gridMiCarrito > .contenedorFormaPago {
+    grid-area: formaPago;
+  }
+  /* GRID PARA productos --- PRODUCTOS ----*/
+  .gridBusquedaProductos {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "menu" "buscador";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: start;
+  }
+  .gridBusquedaProductos > .menuLateral {
+    grid-area: menu;
+  }
+  .gridBusquedaProductos > .contenedorBusqueda {
+    grid-area: buscador;
+  }
+  /* GRID PARA PROD RESULTADOS BUSQUEDA --- PRODUCTOS ----*/
+  #seccionResultadosBusquedaProd {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 626px) and (max-width: 1023px) {
+  /* Para TABLET */
+  /* SET GENERAL */
+  .esconderMenu {
+    display: inline-block;
+  }
+  .box50 {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+  }
+  .iframe {
+    padding: 15px 15px 25px 15px;
+    width: 420px;
+    height: 315px;
+  }
+  /* MENU SUPERIOR */
+  .menuDerecho {
+    float: right;
+    margin-right: 5em;
+  }
+  /******** IMG Publicidad ********/
+  .contenedorImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgPublicidad {
+    margin: 1% 5%;
+    width: 90%;
+    margin-bottom: 5%;
+  }
+  .imgPublicidad2 {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+  }
+  .imgPublicidad3 {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+  }
+  .imgPublicidadMiCarrito {
+    width: 100%;
+    height: 60vh;
+    margin: 1%;
+    padding: auto;
+  }
+  /* INPUT FORMCLASS */
+  .formClass {
+    padding: 10px 5px 5px 5px;
+    margin-left: 30%;
+    margin-right: 25%;
+  }
+  /***************/
+  .maps {
+    width: 70%;
+    text-align: center;
+    margin: 10px;
+    padding: 0.1em;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .pregunta {
+    width: 40%;
+    text-align: center;
+    margin: 10px;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  /* FOOTER */
+  /*ESTILOS PARA EL FOOTER*/
+  footer {
+    display: flex;
+    padding: 15px 15px 5px 25px;
+    background-color: rgb(0, 107, 139);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+  }
+  .footerBox {
+    display: inline-block;
+  }
+  .footerLogo {
+    width: 20%;
+  }
+  .footerRRSS {
+    width: 40%;
+    text-align: left;
+  }
+  .rrss {
+    margin: 2px;
+  }
+  .linkExtras {
+    padding-bottom: 2%;
+    padding-left: 1em;
+    text-align: center;
+  }
+  .footerDirecciones {
+    width: 40%;
+    display: inline-block;
+  }
+  .ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /******** CONTENEDOR CONCEPTOS *******/
+  .contenedorConcepto {
+    margin: 0.5em;
+    padding: 1.8em;
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgb(0, 107, 139);
+    color: #fff;
+  }
+  .contenedorConcepto2 {
+    margin: 5px 5px 5px 10%;
+    padding: 10px;
+    width: 45%;
+    display: inline-block;
+    background-color: rgb(0, 107, 139);
+    color: #fff;
+  }
+  .contenedorConcepto3 {
+    margin: 5px;
+    padding: 10px;
+    width: 45%;
+    display: inline-block;
+    background-color: rgb(0, 107, 139);
+    color: #fff;
+  }
+  /******** CONTENEDOR FORMULARIO *********/
+  .contenedorFormulario {
+    padding: 10px 5px 5px 5px;
+    width: 80%;
+    margin-bottom: 5%;
+    background-color: rgb(0, 107, 139);
+    color: #fff;
+    border-radius: 10px;
+  }
+  /* GRID INICIAL */
+  #page {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head" "main" "foot";
+    grid-template-columns: 1fr;
+  }
+  #page > .header {
+    grid-area: head;
+    background-color: #8ca0ff;
+    height: 80px;
+  }
+  #page > .main {
+    grid-area: main;
+    background-image: linear-gradient(270deg, #a16ff3, #2dcca7, rgba(62, 145, 204, 0.5333333333), rgba(62, 145, 204, 0.5333333333));
+    /*background-color: rgb(180 235 255 / 71%);*/
+  }
+  #page > .footer {
+    grid-area: foot;
+    background-color: rgb(0, 107, 139);
+  }
+  /* GRID PARA MENU E IMAGEN --- INDEX ----*/
+  .vistaPrincipal {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "menu  foto";
+    grid-template-columns: 1.5fr 3fr;
+    justify-items: center;
+    align-items: start;
+  }
+  #page > .menuLateral {
+    grid-area: menu;
+  }
+  #page > .imgVistaPrincipal {
+    grid-area: foto;
+  }
+  /* GRID PARA PROD MAS VENDIDOS --- INDEX ----*/
+  #seccionMasVendidos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "prod prod2" "prod3 prod4";
+    justify-items: center;
+    align-items: baseline;
+  }
+  .seccionMasVendidos > .prod {
+    grid-area: prod;
+  }
+  .seccionMasVendidos > .prod2 {
+    grid-area: prod2;
+  }
+  .seccionMasVendidos > .prod3 {
+    grid-area: prod3;
+  }
+  .seccionMasVendidos > .prod4 {
+    grid-area: prod4;
+  }
+  /* GRID PARA PROD EN OFERTAS --- INDEX ----*/
+  #seccionOfertas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "prod prod2" "prod3 prod4";
+    justify-items: center;
+    align-items: baseline;
+  }
+  .seccionOfertas > .prod {
+    grid-area: prod;
+  }
+  .seccionOfertas > .prod2 {
+    grid-area: prod2;
+  }
+  .seccionOfertas > .prod3 {
+    grid-area: prod3;
+  }
+  .seccionOfertas > .prod4 {
+    grid-area: prod4;
+  }
+  /* GRID PARA FORMULARIO CON IMAGEN  --- CONTACTOS ----*/
+  .gridContactos {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "concepto  concepto" "form fotoPromo";
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: auto 2fr;
+    justify-items: center;
+    align-items: start;
+  }
+  .gridContactos > .contenedorConcepto {
+    grid-area: concepto;
+  }
+  .gridContactos > .contenedorFormulario {
+    grid-area: form;
+  }
+  .gridContactos > .contenedorImg {
+    grid-area: fotoPromo;
+  }
+  /* GRID PARA DEFINICION DE EMPRESA --- NOSOTROS ----*/
+  .gridNosotros {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "empresa empresa" "mision foto1" "foto2 vision";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .gridNosotros > .contenedorEmpresa {
+    grid-area: empresa;
+  }
+  .gridNosotros > .contenedorMision {
+    grid-area: mision;
+  }
+  .gridNosotros > .contenedorVision {
+    grid-area: vision;
+  }
+  .gridNosotros > .contenedorFoto1 {
+    grid-area: foto1;
+  }
+  .gridNosotros > .contenedorFoto2 {
+    grid-area: foto2;
+  }
+  /* GRID PARA DEFINICION DE EMPRESA --- NOSOTROS ----*/
+  .gridNosotros {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "empresa empresa" "mision foto1" "foto2 vision";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .gridNosotros > .contenedorEmpresa {
+    grid-area: empresa;
+  }
+  .gridNosotros > .contenedorMision {
+    grid-area: mision;
+  }
+  .gridNosotros > .contenedorVision {
+    grid-area: vision;
+  }
+  .gridNosotros > .contenedorFoto1 {
+    grid-area: foto1;
+  }
+  .gridNosotros > .contenedorFoto2 {
+    grid-area: foto2;
+  }
+  /* GRID PARA CARRITO DE COMPRAS --- MI CARRITO ----*/
+  .gridMiCarrito {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "foto1 foto1" "productos formaPago";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: start;
+  }
+  .gridMiCarrito > .contenedorFoto1 {
+    grid-area: foto1;
+  }
+  .gridMiCarrito > .contenedorProductos {
+    grid-area: productos;
+  }
+  .gridMiCarrito > .contenedorFormaPago {
+    grid-area: formaPago;
+  }
+  /* GRID PARA productos --- PRODUCTOS ----*/
+  .gridBusquedaProductos {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "menu buscador";
+    grid-template-columns: 15em 1fr;
+    grid-template-rows: 18em;
+    justify-items: center;
+    align-items: start;
+  }
+  .gridBusquedaProductos > .menuLateral {
+    grid-area: menu;
+  }
+  .gridBusquedaProductos > .contenedorBusqueda {
+    grid-area: buscador;
+  }
+  /* GRID PARA PROD RESULTADOS BUSQUEDA --- PRODUCTOS ----*/
+  #seccionResultadosBusquedaProd {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* Para DESKTOP */
+  /* SET GENERAL */
+  .esconderMenu {
+    display: inline-block;
+  }
+  .box50 {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .iframe {
+    padding: 15px 15px 25px 15px;
+    width: 600px;
+    height: 450px;
+  }
+  /* MENU SUPERIOR */
+  .menuDerecho {
+    float: right;
+    margin-right: 20px;
+  }
+  /******** IMG Publicidad ********/
+  .contenedorImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .imgPublicidad {
+    margin: 1% 15%;
+    width: 70%;
+    margin-bottom: 5%;
+  }
+  .imgPublicidad2 {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+  }
+  .imgPublicidad3 {
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+  }
+  .imgPublicidadMiCarrito {
+    width: 100%;
+    height: 60vh;
+    margin: 1%;
+    padding: auto;
+  }
+  /* INPUTFORMCLASS */
+  .formClass {
+    padding: 10px 5px 5px 5px;
+    margin-left: 30%;
+    margin-right: 25%;
+  }
+  /***************/
+  .maps {
+    width: 60%;
+    text-align: center;
+    margin: 10px;
+    padding: 0.1em;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .pregunta {
+    width: 35%;
+    text-align: center;
+    margin: 10px;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  /* FOOTER */
+  /*ESTILOS PARA EL FOOTER*/
+  footer {
+    display: flex;
+    padding: 15px 15px 5px 25px;
+    background-color: rgb(0, 107, 139);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+  }
+  .footerBox {
+    display: inline-block;
+  }
+  .footerLogo {
+    width: 10%;
+  }
+  .footerRRSS {
+    width: 30%;
+    text-align: left;
+  }
+  .rrss {
+    margin: 2px;
+  }
+  .linkExtras {
+    padding-bottom: 2%;
+    padding-left: 5em;
+    text-align: center;
+  }
+  .footerDirecciones {
+    width: 40%;
+    display: inline-block;
+  }
+  .ubicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+  }
+  /******** CONTENEDOR CONCEPTOS *******/
+  .contenedorConcepto {
+    margin: 0.5em 10% 0.5em 10%;
+    padding: 1.8em;
+    width: 60%;
+    float: center;
+    border-radius: 10px;
+    background-color: rgb(0, 107, 139);
+    color: #fff;
+  }
+  .contenedorConcepto2 {
+    margin: 5px 5px 5px 10%;
+    padding: 10px;
+    width: 45%;
+    display: inline-block;
+    background-color: rgb(0, 107, 139);
+    color: #fff;
+  }
+  .contenedorConcepto3 {
+    margin: 5px;
+    padding: 10px;
+    width: 45%;
+    display: inline-block;
+    background-color: rgb(0, 107, 139);
+    color: #fff;
+  }
+  /******** CONTENEDOR FORMULARIO *********/
+  .contenedorFormulario {
+    padding: 10px 5px 5px 5px;
+    width: 80%;
+    margin-bottom: 5%;
+    background-color: rgb(0, 107, 139);
+    color: #fff;
+    border-radius: 10px;
+  }
+  /* GRID INICIAL */
+  #page {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "head" "main" "foot";
+    grid-template-columns: 1fr;
+  }
+  #page > .header {
+    grid-area: head;
+    background-color: #8ca0ff;
+    height: 80px;
+  }
+  #page > .main {
+    grid-area: main;
+    background-image: linear-gradient(270deg, #a16ff3, #2dcca7, rgba(62, 145, 204, 0.5333333333), rgba(62, 145, 204, 0.5333333333));
+    /* background-color: rgb(180 235 255 / 71%);*/
+  }
+  #page > .footer {
+    grid-area: foot;
+    background-color: rgb(0, 107, 139);
+  }
+  /* GRID PARA MENU E IMAGEN  --- INDEX ----*/
+  .vistaPrincipal {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "menu  foto";
+    grid-template-columns: 0.9fr 3fr;
+    justify-items: center;
+    align-items: start;
+  }
+  .vistaPrincipal > .menuLateral {
+    grid-area: menu;
+  }
+  .vistaPrincipal > .imgVistaPrincipal {
+    grid-area: foto;
+  }
+  /* GRID PARA PROD MAS VENDIDOS --- INDEX ----*/
+  #seccionMasVendidos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "prod prod2 prod3 prod4";
+    justify-items: center;
+    align-items: baseline;
+  }
+  .seccionMasVendidos > .prod {
+    grid-area: prod;
+  }
+  .seccionMasVendidos > .prod2 {
+    grid-area: prod2;
+  }
+  .seccionMasVendidos > .prod3 {
+    grid-area: prod3;
+  }
+  .seccionMasVendidos > .prod4 {
+    grid-area: prod4;
+  }
+  /* GRID PARA PROD EN OFERTAS  --- INDEX ----*/
+  #seccionOfertas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "prod prod2 prod3 prod4";
+    justify-items: center;
+    align-items: baseline;
+  }
+  .seccionOfertas > .prod {
+    grid-area: prod;
+  }
+  .seccionOfertas > .prod2 {
+    grid-area: prod2;
+  }
+  .seccionOfertas > .prod3 {
+    grid-area: prod3;
+  }
+  .seccionOfertas > .prod4 {
+    grid-area: prod4;
+  }
+  /* GRID PARA FORMULARIO CON IMAGEN  --- CONTACTOS ----*/
+  .gridContactos {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "concepto  concepto" "form fotoPromo";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 2fr;
+    justify-items: center;
+    align-items: start;
+  }
+  .gridContactos > .contenedorConcepto {
+    grid-area: concepto;
+  }
+  .gridContactos > .contenedorFormulario {
+    grid-area: form;
+  }
+  .gridContactos > .contenedorImg {
+    grid-area: fotoPromo;
+  }
+  /* GRID PARA DEFINICION DE EMPRESA --- NOSOTROS ----*/
+  .gridNosotros {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "empresa empresa" "mision foto1" "foto2 vision";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .gridNosotros > .contenedorEmpresa {
+    grid-area: empresa;
+  }
+  .gridNosotros > .contenedorMision {
+    grid-area: mision;
+  }
+  .gridNosotros > .contenedorVision {
+    grid-area: vision;
+  }
+  .gridNosotros > .contenedorFoto1 {
+    grid-area: foto1;
+  }
+  .gridNosotros > .contenedorFoto2 {
+    grid-area: foto2;
+  }
+  /* GRID PARA CARRITO DE COMPRAS --- MI CARRITO ----*/
+  .gridMiCarrito {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "foto1 foto1" "productos formaPago";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: start;
+  }
+  .gridMiCarrito > .contenedorFoto1 {
+    grid-area: foto1;
+  }
+  .gridMiCarrito > .contenedorProductos {
+    grid-area: productos;
+  }
+  .gridMiCarrito > .contenedorFormaPago {
+    grid-area: formaPago;
+  }
+  /* GRID PARA productos --- PRODUCTOS ----*/
+  .gridBusquedaProductos {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "menu buscador";
+    grid-template-columns: 15em 1fr;
+    grid-template-rows: 18em;
+    justify-items: center;
+    align-items: start;
+  }
+  .gridBusquedaProductos > .menuLateral {
+    grid-area: menu;
+  }
+  .gridBusquedaProductos > .contenedorBusqueda {
+    grid-area: buscador;
+  }
+  /* GRID PARA PROD RESULTADOS BUSQUEDA --- PRODUCTOS ----*/
+  #seccionResultadosBusquedaProd {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: baseline;
+  }
+}
+/* contenido general */
+/*LINKEO A LA FUENTE DE GOOGLE*/
+body {
+  font-family: Source Sans Pro, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.letraSecundaria {
+  font-family: "Edu SA Beginner", cursive;
+}
+
+.letraTexto {
+  font-family: "Mukta", sans-serif;
+}
+
+.letraBlanca {
+  color: #fff;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.letraAzul {
+  color: rgb(0, 107, 139);
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+tr, td, th {
+  border: 1px solid rgb(0, 53, 70);
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+}
+
+/* SETEO PRINCIPAL*/
+/*ESTILOS GENERALES*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.parrafo {
+  padding: 8px;
+}
+
+/*ESTILOS PARA EL HEAD*/
+.logoPrincipal {
+  height: 60px;
+  margin-left: 1%;
+  padding-top: 1%;
+  display: inline-block;
+}
+
+.tituloPrincipal {
+  display: inline-block;
+  padding: 0%;
+  color: #fff;
+}
+
+nav {
+  background: rgb(0, 107, 139);
+  height: 80px;
+  width: 100%;
+}
+
+/*ESTILOS PARA EL BODY*/
+.vistaPrincipal {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.imgPromo {
+  width: 100%;
+  height: 80vh;
+  margin-top: 1em;
+}
+
+.menuLateral {
+  margin: 1em;
+  width: 70%;
+  background-color: rgb(0, 107, 139);
+  color: #fff;
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.menuLateral a {
+  display: block;
+  margin: 0px 5px;
+  color: #fff;
+  padding: 4px;
+  margin: 4px;
+}
+.menuLateral a:hover {
+  color: rgb(0, 107, 139);
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.linkSeccionesFooter {
+  display: block;
+  color: #fff;
+}
+.linkSeccionesFooter:hover {
+  color: rgb(0, 107, 139);
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/******** CONTENEDOR DE BUSQUEDA DE PRODUCTOS *****/
+.contenedorBusqueda {
+  width: 60%;
+  height: auto;
+  margin: 0.5em;
+  padding: 15px;
+  font-size: 16px;
+}
+
+/******** CONTENEDOR PRODUCTOS COMPRA *****/
+.contenedorProductos {
+  width: 80%;
+  height: auto;
+  margin: 0.5em;
+  padding: 10px;
+}
+
+/******** CONTENEDOR FORMA DE PAGO *****/
+.contenedorFormaPago {
+  width: 65%;
+  height: auto;
+  margin: 0.5em;
+  padding: 10px;
+}
+
+/******** INPUT DE BUSQUEDA *****/
+.input {
+  border-radius: 3px;
+}
+
+.inputLabel {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inputLabelBlock {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+
+.inputSubmit {
+  border-radius: 3px;
+  font-size: 18px;
+  border-color: #fff;
+  color: rgb(0, 107, 139);
+}
+
+.inputForm {
+  display: block;
+  padding: 1% 10%;
+}
+
+.textAreaMensaje {
+  width: 80%;
+  height: 20%;
+}
+
+.inputForm > .inputSubmit {
+  margin-left: 50%;
+}
+
+/******** MAS VENDIDOS *********/
+.producto {
+  margin: 1.5em;
+  background-color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.tituloProducto {
+  color: rgb(0, 107, 139);
+  text-align: center;
+}
+
+.precioProducto {
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+.botonProducto {
+  padding: 4px;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.botonProducto:hover {
+  background-color: #2a9e2e;
+}
+
+.imgProducto {
+  width: 200px;
+  height: 200px;
+  margin: 1.5em 2.5em 1em 1.5em;
+}
+
+.imgFormaPago {
+  width: 25%;
+  margin: 0.8em;
+  padding: 0.2em;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.infoProducto {
+  padding-bottom: 10 px;
+}
+
+.subtitulo {
+  text-align: center;
+  padding: 0.1em;
+}
+
+.menuDerecho > li {
+  position: relative;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0px 5px;
+}
+
+.menuDerecho > li > a {
+  color: #fff;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 2px;
+  /*text-transform: uppercase;*/
+}
+
+nav ul.menuDerecho li a:hover {
+  background-color: #fff;
+  color: rgb(0, 107, 139);
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 2px;
+  /*text-transform: uppercase;*/
+}
+
+.subMenu {
+  position: absolute;
+  background-color: rgb(0, 107, 139);
+  width: 150%;
+  padding: 4px;
+  line-height: 20px;
+  display: none;
+  border: #fff;
+  z-index: 99;
+}
+
+.subMenu li a {
+  color: #fff;
+  display: block;
+  padding: 4px;
+}
+
+.menuDerecho li:hover .subMenu {
+  display: block;
+}
+
+/*# sourceMappingURL=styleWithScss.css.map */

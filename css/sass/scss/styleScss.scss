@@ -1,0 +1,274 @@
+/* STYLES WITH SCSS  */
+@import "vars";
+@import "mixins";
+@import "extends";
+@import "responsive";
+
+
+
+
+
+
+/* contenido general */
+
+/*LINKEO A LA FUENTE DE GOOGLE*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+body{
+    font-family: Source Sans Pro, sans-serif;
+    
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding-left:0px;
+}
+.letraSecundaria{
+    font-family: 'Edu SA Beginner', cursive;
+}
+.letraTexto{
+    font-family: 'Mukta', sans-serif;
+}
+.letraBlanca{
+    color: $colorBlanco;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.letraAzul{
+    color: $colorPrincipal;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+tr, td, th { 
+    border: 1px solid $colorSecundario;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+}
+/* SETEO PRINCIPAL*/
+/*ESTILOS GENERALES*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.center{
+    text-align: center;
+}
+
+.parrafo{
+    padding: 8px;
+}
+/*ESTILOS PARA EL HEAD*/
+.logoPrincipal{
+    height: 60px;
+    margin-left: 1%;
+    padding-top: 1%;
+    display: inline-block;
+}
+.tituloPrincipal{
+   display: inline-block;
+    padding: 0%;
+    color: $colorBlanco;
+   
+}
+nav {
+    background: $colorPrincipal;
+    height: 80px;
+    width: 100%;
+}
+
+/*ESTILOS PARA EL BODY*/
+.vistaPrincipal{
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    width: 100%;
+}
+.imgPromo{
+
+    width: 100%;
+    height: 80vh;
+    margin-top:1em;
+}
+.menuLateral{
+    margin: 1em;
+    width: 70%;
+    background-color: $colorPrincipal;
+    color: $colorBlanco;
+    font-size: 16px;
+    padding: 15px;
+    border-radius: 10px;
+    a{
+        display: block;
+        margin: 0px 5px;
+        color: $colorBlanco;
+        padding: 4px;
+        margin: 4px;
+        
+    }
+    a:hover{
+        color: $colorPrincipal;
+        background-color: $colorBlanco;
+        border-radius: 2px;
+    }
+}
+.linkSeccionesFooter{
+    display: block;
+    color: $colorBlanco;
+    &:hover{
+        color: $colorPrincipal;
+        background-color: $colorBlanco;
+        border-radius: 2px;
+    }
+    
+    
+}
+
+
+
+/******** CONTENEDOR DE BUSQUEDA DE PRODUCTOS *****/
+.contenedorBusqueda{
+    @include contenedorStats(60%, auto, 0.5em, 15px);
+    @extend .contenedorExtends;
+    font-size: 16px;
+}
+
+/******** CONTENEDOR PRODUCTOS COMPRA *****/
+.contenedorProductos{
+    @include contenedorStats(80%, auto, 0.5em, 10px);
+    @extend .contenedorExtends;
+}
+/******** CONTENEDOR FORMA DE PAGO *****/
+.contenedorFormaPago {
+    @include contenedorStats(65%, auto, 0.5em, 10px);
+    @extend .contenedorExtends;
+
+}
+/******** INPUT DE BUSQUEDA *****/
+.input{
+    border-radius: 3px;
+}
+.inputLabel{
+    font-size: 18px;
+    font-weight: bold;
+}
+.inputLabelBlock{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+.inputSubmit{
+    border-radius: 3px;
+    font-size: 18px;
+    border-color: $colorBlanco;
+    color:   $colorPrincipal;
+}
+.inputForm{
+ display: block;
+ padding: 1% 10%;
+}
+.textAreaMensaje{
+    width: 80%;
+    height: 20%;
+}
+.inputForm > .inputSubmit {
+    margin-left: 50%;
+}
+/******** MAS VENDIDOS *********/
+.producto{
+    margin: 1.5em;
+   
+    background-color: $colorBlanco;
+    border-radius: 10px;   
+    display: inline-block;  
+}
+.tituloProducto{
+    color: $colorPrincipal;
+    text-align: center;
+}
+.precioProducto{
+    color: $colorNegro;
+    font-size: 16px;
+    text-align: center;
+}
+.botonProducto{
+    padding: 4px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+.botonProducto:hover{
+    background-color: $colorHoverVerde;
+   
+}
+.imgProducto{
+    width: 200px;
+    height: 200px;
+    margin: 1.5em 2.5em 1.0em 1.5em;
+}
+
+.imgFormaPago{
+    width: 25%;
+    margin: 0.8em;
+    padding: 0.2em;
+    background-color: $colorBlanco;
+    border-radius: 5px;
+}
+.infoProducto{
+    padding-bottom: 10  px;
+}
+.subtitulo{
+    text-align: center;
+    padding: 0.1em;
+}
+
+
+    .menuDerecho>li {
+        position: relative;
+        display: inline-block;
+        line-height: 80px;
+        margin: 0px 5px;
+    }
+    .menuDerecho>li>a {
+        color: $colorBlanco;
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 2px;
+        /*text-transform: uppercase;*/
+    }
+    nav ul.menuDerecho li a:hover {
+        background-color: $colorBlanco;
+        color: $colorPrincipal;
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 2px;
+        
+        /*text-transform: uppercase;*/
+    }
+    .subMenu {
+        position: absolute;
+        background-color:$colorPrincipal ;
+        width: 150%;
+        padding: 4px;
+        line-height: 20px;
+        display: none;
+        border: $colorBlanco;
+        z-index:99;
+    }
+    
+    .subMenu li a {
+        color: $colorBlanco;
+        display: block;
+        padding: 4px;
+        
+    }
+    
+    .menuDerecho li:hover .subMenu{
+        display: block;
+    }

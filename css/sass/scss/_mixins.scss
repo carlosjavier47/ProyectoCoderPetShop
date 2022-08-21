@@ -1,0 +1,7 @@
+@mixin contenedorStats($width,$height,$margin,$padding){
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+   
+}
