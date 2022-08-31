@@ -5,4 +5,16 @@ $colorBlanco:#fff;
 $colorNegro:#000;
 $colorVariante:#8ca0ff;
 
-$coloGradienteFondo:linear-gradient(270deg,#a16ff3,#2dcca7,#3e91cc88,#3e91cc88);
+$colorGradienteFondo:linear-gradient(270deg,#a16ff3,#2dcca7,#3e91cc88,#3e91cc88);
+
+
+$colores:
+    (
+        colorPrincipal:$colorPrincipal,
+        colorSecundario:$colorSecundario,
+        colorHoverVerde:$colorHoverVerde,
+        colorBlanco:$colorBlanco,
+        colorNegro:$colorNegro,
+        colorVariante:$colorVariante,
+        colorGradienteFondo:$colorGradienteFondo
+    );

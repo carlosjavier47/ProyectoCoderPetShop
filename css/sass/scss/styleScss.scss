@@ -8,7 +8,6 @@
 
 
 
-
 /* contenido general */
 
 /*LINKEO A LA FUENTE DE GOOGLE*/
@@ -32,18 +31,18 @@ ul{
     font-family: 'Mukta', sans-serif;
 }
 .letraBlanca{
-    color: $colorBlanco;
+    color:map-get($colores, colorBlanco);
     padding-top: 5px;
     padding-bottom: 10px;
 }
 .letraAzul{
-    color: $colorPrincipal;
+    color: map-get($colores, colorPrincipal);
     padding-top: 5px;
     padding-bottom: 10px;
 }
 
 tr, td, th { 
-    border: 1px solid $colorSecundario;
+    border: 1px solid map-get($colores, colorSecundario);
     padding: 5px;
     margin: 5px;
     width: 100%;
@@ -74,11 +73,11 @@ tr, td, th {
 .tituloPrincipal{
    display: inline-block;
     padding: 0%;
-    color: $colorBlanco;
+    color: map-get($colores, colorBlanco);
    
 }
 nav {
-    background: $colorPrincipal;
+    background: map-get($colores, colorPrincipal);
     height: 80px;
     width: 100%;
 }
@@ -98,31 +97,31 @@ nav {
 .menuLateral{
     margin: 1em;
     width: 70%;
-    background-color: $colorPrincipal;
-    color: $colorBlanco;
+    background-color: map-get($colores, colorPrincipal);
+    color: map-get($colores, colorBlanco);
     font-size: 16px;
     padding: 15px;
     border-radius: 10px;
     a{
         display: block;
         margin: 0px 5px;
-        color: $colorBlanco;
+        color: map-get($colores, colorBlanco);
         padding: 4px;
         margin: 4px;
         
     }
     a:hover{
-        color: $colorPrincipal;
-        background-color: $colorBlanco;
+        color: map-get($colores, colorPrincipal);
+        background-color: map-get($colores, colorBlanco);
         border-radius: 2px;
     }
 }
 .linkSeccionesFooter{
     display: block;
-    color: $colorBlanco;
+    color: map-get($colores, colorBlanco);
     &:hover{
-        color: $colorPrincipal;
-        background-color: $colorBlanco;
+        color: map-get($colores, colorPrincipal);
+        background-color: map-get($colores, colorBlanco);
         border-radius: 2px;
     }
     
@@ -165,8 +164,8 @@ nav {
 .inputSubmit{
     border-radius: 3px;
     font-size: 18px;
-    border-color: $colorBlanco;
-    color:   $colorPrincipal;
+    border-color: map-get($colores, colorBlanco);
+    color:   map-get($colores, colorPrincipal);
 }
 .inputForm{
  display: block;
@@ -183,16 +182,16 @@ nav {
 .producto{
     margin: 1.5em;
    
-    background-color: $colorBlanco;
+    background-color: map-get($colores, colorBlanco);
     border-radius: 10px;   
     display: inline-block;  
 }
 .tituloProducto{
-    color: $colorPrincipal;
+    color: map-get($colores, colorPrincipal);
     text-align: center;
 }
 .precioProducto{
-    color: $colorNegro;
+    color: map-get($colores, colorNegro);
     font-size: 16px;
     text-align: center;
 }
@@ -204,7 +203,7 @@ nav {
     margin-top: 2%;
 }
 .botonProducto:hover{
-    background-color: $colorHoverVerde;
+    background-color: map-get($colores, colorHoverVerde);
    
 }
 .imgProducto{
@@ -217,7 +216,7 @@ nav {
     width: 25%;
     margin: 0.8em;
     padding: 0.2em;
-    background-color: $colorBlanco;
+    background-color: map-get($colores, colorBlanco);
     border-radius: 5px;
 }
 .infoProducto{
@@ -236,15 +235,15 @@ nav {
         margin: 0px 5px;
     }
     .menuDerecho>li>a {
-        color: $colorBlanco;
+        color: map-get($colores, colorBlanco);
         font-size: 16px;
         padding: 8px;
         border-radius: 2px;
         /*text-transform: uppercase;*/
     }
     nav ul.menuDerecho li a:hover {
-        background-color: $colorBlanco;
-        color: $colorPrincipal;
+        background-color: map-get($colores, colorBlanco);
+        color: map-get($colores, colorPrincipal);
         font-size: 16px;
         padding: 8px;
         border-radius: 2px;
@@ -253,17 +252,17 @@ nav {
     }
     .subMenu {
         position: absolute;
-        background-color:$colorPrincipal ;
+        background-color:map-get($colores, colorPrincipal) ;
         width: 150%;
         padding: 4px;
         line-height: 20px;
         display: none;
-        border: $colorBlanco;
+        border: map-get($colores, colorBlanco);
         z-index:99;
     }
     
     .subMenu li a {
-        color: $colorBlanco;
+        color: map-get($colores, colorBlanco);
         display: block;
         padding: 4px;
         

@@ -1,6 +1,6 @@
 .contenedorExtends{
     float: left;
-    background-color: $colorPrincipal;
-    color: $colorBlanco;
+    background-color: map-get($colores, colorPrincipal);
+    color: map-get($colores, colorBlanco);
     border-radius: 10px;
 }

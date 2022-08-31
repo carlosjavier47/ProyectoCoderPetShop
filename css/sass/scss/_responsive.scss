@@ -52,7 +52,7 @@
         text-align: center;
         margin: 10px;
         padding: 0.1em;
-        background-color: $colorBlanco;
+        background-color: map-get($colores, colorBlanco);
         border-radius: 10px;
     }
     .pregunta{
@@ -60,7 +60,7 @@
         text-align: center;
         margin: 10px;
         padding: 1em;
-        background-color: $colorBlanco;
+        background-color: map-get($colores, colorBlanco);
         border-radius: 10px;
     }
         /* FOOTER */
@@ -68,7 +68,7 @@
     footer{
         display: flex;
         padding: 15px 15px 5px 25px;
-        background-color: $colorPrincipal;
+        background-color: map-get($colores, colorPrincipal);
         flex-direction: row;
         justify-content: space-around;
         align-items: end;
@@ -109,32 +109,32 @@
         padding: 1.8em;
         width: 80%;
         border-radius: 10px;
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($colores, colorPrincipal);
+        color: map-get($colores, colorBlanco);
     }
     .contenedorConcepto2{
         margin: 5px 5px 5px 10%;
         padding: 10px;
         width: 45%;
         display: inline-block;
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($colores, colorPrincipal);
+        color: map-get($colores, colorBlanco);
     }
     .contenedorConcepto3{
         margin: 5px;
         padding: 10px;
         width: 45%;
         display: inline-block;
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($colores, colorPrincipal);
+        color: map-get($colores, colorBlanco);
     }
     /******** CONTENEDOR FORMULARIO *********/
     .contenedorFormulario{
         padding: 10px 5px 5px 5px;
         width: 80%;
         margin-bottom: 5%;
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($colores, colorPrincipal);
+        color: map-get($colores, colorBlanco);
         border-radius: 10px;
     }
     /* GRID INICIAL */
@@ -149,19 +149,19 @@
     
     #page > .header {
     grid-area: head;
-    background-color: $colorVariante;
+    background-color: map-get($colores, colorVariante);
     height: 80px;
     }
     
     #page > .main {
     grid-area: main;
-    background-image: $coloGradienteFondo;
+    background-image: map-get($colores, colorGradienteFondo);
    /* background-color: rgb(180 235 255 / 71%);*/
     }
     
     #page > .footer {
     grid-area: foot;
-    background-color: $colorPrincipal;
+    background-color: map-get($colores, colorPrincipal);
     }
 
  
@@ -388,7 +388,7 @@
         text-align: center;
         margin: 10px;
         padding: 0.1em;
-        background-color: $colorBlanco;
+        background-color: map-get($colores, colorBlanco);
         border-radius: 10px;
     }
     .pregunta{
@@ -396,7 +396,7 @@
         text-align: center;
         margin: 10px;
         padding: 1em;
-        background-color: $colorBlanco;
+        background-color: map-get($colores, colorBlanco);
         border-radius: 10px;
     }
         /* FOOTER */
@@ -404,7 +404,7 @@
     footer{
         display: flex;
         padding: 15px 15px 5px 25px;
-        background-color: $colorPrincipal;
+        background-color: map-get($colores, colorPrincipal);
         flex-direction: row;
         justify-content: space-around;
         align-items: end;
@@ -445,32 +445,32 @@
         padding: 1.8em;
         width: 80%;
         border-radius: 10px;
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($colores, colorPrincipal);
+        color: map-get($colores, colorBlanco);
     }
     .contenedorConcepto2{
         margin: 5px 5px 5px 10%;
         padding: 10px;
         width: 45%;
         display: inline-block;
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($colores, colorPrincipal);
+        color: map-get($colores, colorBlanco);
     }
     .contenedorConcepto3{
         margin: 5px;
         padding: 10px;
         width: 45%;
         display: inline-block;
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($colores, colorPrincipal);
+        color: map-get($colores, colorBlanco);
     }
     /******** CONTENEDOR FORMULARIO *********/
     .contenedorFormulario{
         padding: 10px 5px 5px 5px;
         width: 80%;
         margin-bottom: 5%;
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($colores, colorPrincipal);
+        color: map-get($colores, colorBlanco);
         border-radius: 10px;
     }
     /* GRID INICIAL */
@@ -485,19 +485,19 @@
     
     #page > .header {
     grid-area: head;
-    background-color: $colorVariante;
+    background-color: map-get($colores, colorVariante);
     height: 80px;
     }
     
     #page > .main {
     grid-area: main;
-    background-image: $coloGradienteFondo;
+    background-image: map-get($colores, colorGradienteFondo);
     /*background-color: rgb(180 235 255 / 71%);*/
     }
     
     #page > .footer {
     grid-area: foot;
-    background-color: $colorPrincipal;
+    background-color: map-get($colores, colorPrincipal);
     }
 
     /* GRID PARA MENU E IMAGEN --- INDEX ----*/
@@ -739,7 +739,7 @@
         text-align: center;
         margin: 10px;
         padding: 0.1em;
-        background-color: $colorBlanco;
+        background-color: map-get($colores, colorBlanco);
         border-radius: 10px;
     }
     .pregunta{
@@ -747,7 +747,7 @@
         text-align: center;
         margin: 10px;
         padding: 1em;
-        background-color: $colorBlanco;
+        background-color: map-get($colores, colorBlanco);
         border-radius: 10px;
     }
     /* FOOTER */
@@ -755,7 +755,7 @@
     footer{
         display: flex;
         padding: 15px 15px 5px 25px;
-        background-color: $colorPrincipal;
+        background-color: map-get($colores, colorPrincipal);
         flex-direction: row;
         justify-content: space-around;
         align-items: end;
@@ -796,32 +796,32 @@
         width: 60%;
         float: center;
         border-radius: 10px;
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($colores, colorPrincipal);
+        color: map-get($colores, colorBlanco);
     }
     .contenedorConcepto2{
         margin: 5px 5px 5px 10%;
         padding: 10px;
         width: 45%;
         display: inline-block;
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($colores, colorPrincipal);
+        color: map-get($colores, colorBlanco);
     }
     .contenedorConcepto3{
         margin: 5px;
         padding: 10px;
         width: 45%;
         display: inline-block;
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($colores, colorPrincipal);
+        color: map-get($colores, colorBlanco);
     }
     /******** CONTENEDOR FORMULARIO *********/
     .contenedorFormulario{
         padding: 10px 5px 5px 5px;
         width: 80%;
         margin-bottom: 5%;
-        background-color: $colorPrincipal;
-        color: $colorBlanco;
+        background-color: map-get($colores, colorPrincipal);
+        color: map-get($colores, colorBlanco);
         border-radius: 10px;
     }
     /* GRID INICIAL */
@@ -836,20 +836,20 @@
     
     #page > .header {
     grid-area: head;
-    background-color: $colorVariante;
+    background-color: map-get($colores, colorVariante);
     height: 80px;
     }
     
     #page > .main {
     grid-area: main;
-    background-image: $coloGradienteFondo;
+    background-image: map-get($colores, colorGradienteFondo);
 
    /* background-color: rgb(180 235 255 / 71%);*/
     }
     
     #page > .footer {
     grid-area: foot;
-    background-color: $colorPrincipal;
+    background-color: map-get($colores, colorPrincipal);
     }
 
     /* GRID PARA MENU E IMAGEN  --- INDEX ----*/
