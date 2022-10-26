@@ -292,16 +292,13 @@
         display: grid;
         width: 100%;
         grid-template-areas: "productos"
-                             "formaPago"
-                             "foto1";
+                             "formaPago";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         justify-items: center;
         align-items: start;
     }
-    .gridMiCarrito > .contenedorFoto1 {
-        grid-area: foto1;
-    }
+    
     .gridMiCarrito > .contenedorProductos {
         grid-area: productos;
     }
@@ -644,16 +641,13 @@
     .gridMiCarrito{
         display: grid;
         width: 100%;
-        grid-template-areas: "foto1 foto1"
-                             "productos formaPago";
+        grid-template-areas: "productos formaPago";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
         align-items: start;
     }
-    .gridMiCarrito > .contenedorFoto1 {
-        grid-area: foto1;
-    }
+
     .gridMiCarrito > .contenedorProductos {
         grid-area: productos;
     }
@@ -965,16 +959,13 @@
     .gridMiCarrito{
         display: grid;
         width: 100%;
-        grid-template-areas: "foto1 foto1"
-                             "productos formaPago";
+        grid-template-areas: "productos formaPago";
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
         align-items: start;
     }
-    .gridMiCarrito > .contenedorFoto1 {
-        grid-area: foto1;
-    }
+    
     .gridMiCarrito > .contenedorProductos {
         grid-area: productos;
     }

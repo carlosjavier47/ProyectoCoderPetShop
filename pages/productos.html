@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link rel="stylesheet" href="../css/sass/css/styleWithScss.css">
+    <link rel="stylesheet" href="../css/cssSimple.css?1">
     <link rel="stylesheet" href="../css/animations.css">
     <!-- Titulo de pagina -->
     <title>Productos para tus mascotas - PetShop </title>
@@ -82,24 +83,9 @@
                         <img class="imgProducto" src="../img/producto1.jpg" alt="Perrarina Dog Show" style="width: 200px; height: 200px;">
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Perrarina Dog Show</h4>
-                            <h6 class="precioProducto">7$</h6>
-                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
-                        </div>
-                    </div>
-                    <div class="producto">
-                        <img class="imgProducto" src="../img/producto2.jpg" alt="Gatarina Gat Show" style="width: 200px; height: 200px;">
-                        <div class="infoProducto">
-                            <h4 class="tituloProducto">Gatarina Cat Show</h4>
-                            <h6 class="precioProducto">7$</h6>
-                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
-                        </div>
-                    </div>
-                    <div class="producto">
-                        <img class="imgProducto" src="../img/producto1.jpg" alt="Perrarina Dog Show" style="width: 200px; height: 200px;">
-                        <div class="infoProducto">
-                            <h4 class="tituloProducto">Perrarina Dog Show</h4>
-                            <h6 class="precioProducto">7$</h6>
-                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                            <h6 class="precioProducto">12$</h6>
+                            <p class="id">1</p> 
+                            <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                         </div>
                     </div>
                     <div class="producto">
@@ -107,39 +93,62 @@
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Gatarina Cat Show</h4>
                             <h6 class="precioProducto">15$</h6>
-                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                            <p class="id">2</p>
+                            <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                         </div>
                     </div>
                     <div class="producto">
-                        <img class="imgProducto" src="../img/producto1.jpg" alt="Perrarina Dog Show" style="width: 200px; height: 200px;">
+                        <img class="imgProducto" src="../img/producto4.jpg" alt="Casa para gato" >
                         <div class="infoProducto">
-                            <h4 class="tituloProducto">Perrarina Dog Show</h4>
-                            <h6 class="precioProducto">8$</h6>
-                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
-                        </div>
-                    </div>
-                    <div class="producto">
-                        <img class="imgProducto" src="../img/producto2.jpg" alt="Gatarina Gat Show" style="width: 200px; height: 200px;">
-                        <div class="infoProducto">
-                            <h4 class="tituloProducto">Gatarina Cat Show</h4>
-                            <h6 class="precioProducto">9$</h6>
-                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
-                        </div>
-                    </div>
-                    <div class="producto">
-                        <img class="imgProducto" src="../img/producto1.jpg" alt="Perrarina Dog Show" style="width: 200px; height: 200px;">
-                        <div class="infoProducto">
-                            <h4 class="tituloProducto">Perrarina Dog Show</h4>
-                            <h6 class="precioProducto">6$</h6>
-                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                            <h4 class="tituloProducto">Casa para gato</h4>
+                            <h6 class="precioProducto">13$</h6>
+                            <p class="id">3</p>
+                            <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                         </div>
                     </div>
                     <div class="producto">
                         <img class="imgProducto" src="../img/producto2.jpg" alt="Gatarina Gat Show" style="width: 200px; height: 200px;">
                         <div class="infoProducto">
-                            <h4 class="tituloProducto">Gatarina Cat Show</h4>
-                            <h6 class="precioProducto">10$</h6>
-                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                            <h4 class="tituloProducto">Gatarina Cat Show 2Kg</h4>
+                            <h6 class="precioProducto">30$</h6>
+                            <p class="id">10</p>
+                             <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="imgProducto" src="../img/producto1.jpg" alt="Perrarina Dog Show" style="width: 200px; height: 200px;">
+                        <div class="infoProducto">
+                            <h4 class="tituloProducto">Perrarina Dog Show 2Kg</h4>
+                            <h6 class="precioProducto">24$</h6>
+                            <p class="id">11</p>
+                             <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="imgProducto" src="../img/producto2.jpg" alt="Gatarina Gat Show" style="width: 200px; height: 200px;">
+                        <div class="infoProducto">
+                            <h4 class="tituloProducto">Gatarina Cat Show 4Kg</h4>
+                            <h6 class="precioProducto">60$</h6>
+                            <p class="id">12</p>
+                             <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="imgProducto" src="../img/producto1.jpg" alt="Perrarina Dog Show" style="width: 200px; height: 200px;">
+                        <div class="infoProducto">
+                            <h4 class="tituloProducto">Perrarina Dog Show 4Kg</h4>
+                            <h6 class="precioProducto">48$</h6>
+                            <p class="id">13</p>
+                             <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <img class="imgProducto" src="../img/producto2.jpg" alt="Gatarina Gat Show" style="width: 200px; height: 200px;">
+                        <div class="infoProducto">
+                            <h4 class="tituloProducto">Gatarina Cat Show 8Kg</h4>
+                            <h6 class="precioProducto">110$</h6>
+                            <p class="id">14</p>
+                             <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                         </div>
                     </div>
     
@@ -151,32 +160,36 @@
                         <img class="imgProducto" src="../img/producto3.jpg" alt="Juguetes para morder" style="width: 200px; height: 200px;">
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Juguetes para morder</h4>
-                            <h6 class="precioProducto">7$</h6>
-                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                            <h6 class="precioProducto">12$</h6>
+                            <p class="id">5</p>
+                             <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                         </div>
                     </div>
                     <div class="producto prod2">
                         <img class="imgProducto" src="../img/producto5.jpg" alt="Casa hexagonal" style="width: 200px; height: 200px;">
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Casa hexagonal</h4>
-                            <h6 class="precioProducto">45$</h6>
-                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                            <h6 class="precioProducto">11$</h6>
+                            <p class="id">6</p>
+                             <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                         </div>
                     </div>
                     <div class="producto">
                         <img class="imgProducto prod3" src="../img/producto6.jpg" alt="Casa para gato" style="width: 200px; height: 200px;">
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Casa hexagonal para gato</h4>
-                            <h6 class="precioProducto">24$</h6>
-                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
-                        </div> 
+                            <h6 class="precioProducto">12$</h6>
+                            <p class="id">7</p>
+                             <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
+                        </div>
                     </div>
                     <div class="producto">
                         <img class="imgProducto prod4" src="../img/producto7.jpg" alt="Casa para perro" style="width: 200px; height: 200px;">
                         <div class="infoProducto">
                             <h4 class="tituloProducto">Casa para perro</h4>
-                            <h6 class="precioProducto">20$</h6>
-                            <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                            <h6 class="precioProducto">16$</h6>
+                            <p class="id">4</p>
+                             <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                         </div>    
                     </div>
                 </div>
@@ -215,5 +228,7 @@
             </footer>
     </section>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <!-- Linkeo al js -->
+    <script src="../js/main.js?1"></script>
 </body>
 </html>

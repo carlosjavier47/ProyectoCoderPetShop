@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/sass/css/styleWithScss.css">
+    <link rel="stylesheet" href="css/cssSimple.css?1">
     <link rel="stylesheet" href="css/animations.css">
     <!-- Titulo de pagina -->
     <title>PetShop - Tu tienda de mascotas del Uruguay</title>
@@ -30,7 +31,7 @@
                     <li class="esconderMenu text-focus-in"><a href="pages/contactos.html">Contactos</a></li>
                     <li  class="esconderMenu text-focus-in"><a href="pages/productos.html">Productos</a></li>
                     <li><a class="text-focus-in" href="pages/micarrito.html">Mi Carrito</a></li>
-                    <li><a class="text-focus-in" href="index.html">Login</a></li>
+                    <li><a class="text-focus-in" id="loginBtn" href="index.html">Login</a></li>
                 </ul>
             </nav>
         </header>
@@ -95,7 +96,8 @@
                     <div class="infoProducto">
                         <h4 class="tituloProducto">Perrarina Dog Show</h4>
                         <h6 class="precioProducto">12$</h6>
-                        <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                        <p class="id">1</p> 
+                        <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                     </div>
                 </div>
                 <div class="producto prod2">
@@ -103,7 +105,8 @@
                     <div class="infoProducto">
                         <h4 class="tituloProducto">Gatarina Cat Show</h4>
                         <h6 class="precioProducto">15$</h6>
-                        <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                        <p class="id">2</p>
+                        <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                     </div>
                 </div>
                 <div  class="producto prod3">
@@ -111,7 +114,8 @@
                     <div class="infoProducto">
                         <h4 class="tituloProducto">Casa para gato</h4>
                         <h6 class="precioProducto">13$</h6>
-                        <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                        <p class="id">3</p>
+                        <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                     </div>
                 </div>
                 <div  class="producto prod4">
@@ -119,7 +123,8 @@
                     <div class="infoProducto">
                         <h4 class="tituloProducto">Casa para perro</h4>
                         <h6 class="precioProducto">16$</h6>
-                        <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                        <p class="id">4</p>
+                         <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -131,7 +136,8 @@
                     <div class="infoProducto">
                         <h4 class="tituloProducto">Juguetes para morder</h4>
                         <h6 class="precioProducto">12$</h6>
-                        <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                        <p class="id">5</p>
+                         <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                     </div>
                 </div>
                 <div  class="producto prod2">
@@ -139,7 +145,8 @@
                     <div class="infoProducto">
                         <h4 class="tituloProducto">Casa hexagonal</h4>
                         <h6 class="precioProducto">11$</h6>
-                        <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                        <p class="id">6</p>
+                         <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                     </div>
                 </div>
                 <div  class="producto prod3">
@@ -147,7 +154,8 @@
                     <div class="infoProducto">
                         <h4 class="tituloProducto">Casa hexagonal para gato</h4>
                         <h6 class="precioProducto">12$</h6>
-                        <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                        <p class="id">7</p>
+                         <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                     </div>
                 </div>
                 <div  class="producto prod4">
@@ -155,7 +163,8 @@
                     <div class="infoProducto">
                         <h4 class="tituloProducto">Casa para perro</h4>
                         <h6 class="precioProducto">8$</h6>
-                        <button type="button" class="btn btn-outline-success botonProducto">Añadir</button>
+                        <p class="id">8</p>
+                         <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -203,6 +212,9 @@
             </div>
         </footer>
     </section>
+    <!-- Linkeo al js BS -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Linkeo al js -->
+    <script src="js/main.js?1"></script>
 </body>
 </html>

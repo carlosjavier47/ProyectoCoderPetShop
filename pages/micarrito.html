@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link rel="stylesheet" href="../css/sass/css/styleWithScss.css">
+    <link rel="stylesheet" href="../css/cssSimple.css?1">
     <link rel="stylesheet" href="../css/animations.css">
     <!-- Titulo de pagina -->
     <title>Mi Carrito de compras - PetShop</title>
@@ -46,34 +47,24 @@
         <!-- Main -->
         <main class="main">
             <div class="gridMiCarrito">
-                <div class="contenedorFoto1">
-                    <!-- Imagen promocional -->
-                    <img class="imgPublicidadMiCarrito" src="../img/100.jpg" alt="Perrito" >                
-                </div>
                 <!-- Productos en el carrito -->
                 <div class="contenedorProductos">
                     <h2>Mi Carrito</h2>
                     <!-- Tabla de productos -->
-                    <table class="table table-sm table-success table-striped table-borderless">
+                    <table class="table table-hover table-borderless text-white">
                         <thead>
                             <tr>
                                 <th scope="col">Producto</th>
+                                <th scope="col">Agregar</th>
+                                <th scope="col">Eliminar</th>
                                 <th scope="col">Precio ($)</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Sub-Total</th>
+                                
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td scope="row">Gatarina</td>
-                                <td scope="row">12$</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">Casa xehagonal</td>
-                                <td scope="row">35$</td>
-                            </tr>
-                            <tr>
-                                <td scope="row">Juguete para morder</td>
-                                <td scope="row">7$</td>
-                            </tr>
+                        <tbody class="tablaProd">
+
                         </tbody>
                         </table>
                 </div>
@@ -85,16 +76,18 @@
                     <img class="imgFormaPago" src="../img/paypal.png" alt="Paypal" style="width:32px;">
                     <img class="imgFormaPago" src="../img/billetes-de-banco.png" alt="Dinero" style="width:32px;">
                     <form action="">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Seleccionar</option>
+                        <select class="form-select" id="medioPago">
+                            <option selected value="0">Seleccionar</option>
                             <option value="1">Paypal</option>
                             <option value="2">Visa - Credito</option>
                             <option value="3">Master - Credito</option>
-                            <option value="4"> Efectivo en la sucursal</option>
+                            <option value="4">Efectivo en la sucursal</option>
                         </select>
                         <div class="d-grid gap-2 mt-2">
-                            <button class="btn btn-primary" type="button">Comprar</button>
-                            
+                            <button class="btn btn-primary" id="btnCompra" type="button">Comprar</button>
+                            <div id="respuesta" class="text-center">
+                                <h3 id="texto"></h3>
+                            </div>
                           </div>
                     </form>
                 </div>
@@ -133,5 +126,6 @@
         </footer>
     </section>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

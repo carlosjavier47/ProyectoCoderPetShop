@@ -43,7 +43,9 @@ tr, td, th {
     text-decoration: none;
     list-style: none;
 }
-
+.id{
+    display: none;
+}
 .center{
     text-align: center;
 }
