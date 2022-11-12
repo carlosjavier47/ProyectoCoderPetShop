@@ -2,18 +2,14 @@ function compra (productos){
     //Propiedades públicas
     this.productos = productos;
     this.obtenerProductos= function(contenido){
-        //console.log('verifico que el local este con o sin elementos');
-       
+        //verifico que el local este con o sin elementos
         this.productos=contenido;
-       // console.log(this.productos);
     }
 
     this.guardarProductos= function(contenido){
-        //console.log('guardo el producto, primero debo verificar si hay allgo o no en el local');
+        //guardo el producto, primero debo verificar si hay allgo o no en el local
         if (this.productos.find(item => item.id ==contenido.id)==undefined) {
             this.productos.push(contenido);
-            console.log(contenido);
-            console.log(contenido.id);
             addLocalStorageList(contenido);
         } else {
             this.productos.forEach(function(item){
@@ -26,15 +22,12 @@ function compra (productos){
         }
     }
     this.eliminarProductos= function(contenido){
-        //console.log('guardo el producto, primero debo verificar si hay allgo o no en el local');
         if (this.productos.find(item => item.id ==contenido.id)==undefined) {
-            console.log('No se encuentra el producto');
+           
         } else {
             this.productos = this.productos.filter(item=>item.id!=contenido.id); 
             eliminarProductoLS(contenido.id);
         }
-        //console.log('eliminamos');
-        //console.log(this.productos);
     }
 
 
@@ -42,13 +35,10 @@ function compra (productos){
 //funciones de  LS
 function getProductoList(){
     let productoLS;
-       //console.log("paso por aqui");
     if (localStorage.getItem('productos') === null) {
-        //console.log("esta vacio");
         productoLS=[];
     }else {
         productoLS = JSON.parse(localStorage.getItem('productos'));
-        //console.log("NO esta vacio--"+JSON.stringify(productoLS));
     }
  
     return productoLS
@@ -57,50 +47,33 @@ function getProductoList(){
  function addLocalStorageList(productos){
    let productoLS;
    productoLS= getProductoList();
-   //console.log('productos del LS--'+JSON.stringify(productoLS));
-   //console.log('producto que entra--'+JSON.stringify(productos));
-   //console.log("por que no dice que esta vacio");
    productoLS!=[] ? productoLS.push(productos):productoLS=productos;
-   //console.log(productoLS);
     localStorage.setItem('productos', JSON.stringify(productoLS));
  }
  
  function eliminarProductoLS(id){
-     //console.log(titulo, "titulo");
   let productoLS;
   productoLS= getProductoList();
-  //console.log(productoLS);
   productoLS.forEach( function(element, index) {
-      // statements
-      
-      //console.log(productoLS[0].titulo); 
       itemid=element.id?element.id:element[index].id;
       if (itemid === id) {
           productoLS.splice(index,1);
-          //console.log(productoLS[index].titulo); 
-          //console.log("y por que no elimino");
       }
   });
-  //console.log(productoLS);
   localStorage.setItem('productos', JSON.stringify(productoLS));
  }
  
  function chageCantidadLS(id,cantidad){
-    console.log('si  cambiando cantidad');
+
     let productoLS;
     productoLS= getProductoList();
-    //console.log(JSON.stringify(productoLS));
     productoLS.forEach( function(productoLS, index) {
-      //console.log(productoLS[1].titulo); 
       itemid=productoLS.id?productoLS.id:productoLS[index].id;
       if (itemid === id) {
           productoLS.cantidad= cantidad;
-          //console.log(cantidad, "la cantidad");
-          //console.log(productoLS[index].cantidad);
-          //console.log("y por que no cambio");
       }
   });
-  console.log(JSON.stringify(productoLS));
+
   localStorage.setItem('productos', JSON.stringify(productoLS));
  }
 
@@ -141,8 +114,6 @@ function getProductoList(){
                 `;
             const btncompra = document.getElementById('btnCompra');
             btncompra.disabled = true; 
-        } else {
-            console.log("no vacio");
         }
         carritoProdItem =carritoProdItem+`
         <tr>
@@ -163,7 +134,19 @@ function clearLocalStorage(){
    localStorage.clear(); 
 }
 
-
+// toast de sweetalert
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'bottom',
+    showConfirmButton: false,
+    timer: 1500
+  });
+  const Toast2 = Swal.mixin({
+    toast: false,
+    position: 'center',
+    showConfirmButton: false,
+    timer: 1500
+  });
 
 
 let prod = [];
@@ -184,7 +167,6 @@ function addCart(el){
     let precioProd=infoProd.querySelector(".precioProducto").innerText.substr(0, infoProd.querySelector(".precioProducto").innerText.length - 1);
     let idProd=infoProd.querySelector(".id").innerText;
     let cantidadProd=infoProd.querySelector(".cantidadProducto")!=null? infoProd.querySelector(".cantidadProducto").innerText:1;
-    //let idProd=$(el).data("id");
     let producto={
             id:idProd,
             titulo:nombreProd,
@@ -193,6 +175,10 @@ function addCart(el){
         }
     carrito.guardarProductos(producto);
     document.querySelector('.tablaProd')!=null ? leerLocalStorage(): ""; 
+    Toast.fire({
+        icon: 'success',
+        title: 'El producto fue agregado al carrito'
+      })
 
 }
 function deleteCart(el){
@@ -209,35 +195,63 @@ function deleteCart(el){
         }
     carrito.eliminarProductos(producto);
     document.querySelector('.tablaProd')!=null ? leerLocalStorage(): ""; 
+    Toast.fire({
+        icon: 'error',
+        title: 'El producto fue eliminado del carrito'
+      })
+
 }
 
 let finalizarCompra=document.getElementById('btnCompra');
 
-finalizarCompra.addEventListener('click',function(e){
-    console.log('asd');
-    let productoLS;
-    productoLS = getProductoList();
-    let btnMedioPago=document.getElementById('medioPago');
-    let respuesta=document.getElementById('respuesta');
-    console.log(btnMedioPago.value);
-    if (btnMedioPago.value!=0) {
-        document.getElementById('texto').innerHTML="Muchas gracias por realizar la compra, dirijase a la sucursal para hacer el retiro de su mercancia.";
-        const btncompra = document.getElementById('btnCompra');
-        btncompra.disabled = true; 
-        clearLocalStorage();
-        setTimeout( function() { window.location.href = "../index.html"; }, 8000 );
-    } else {
-        document.getElementById('texto').innerHTML="Seleccionar medio de pago para continuar";
-    }
+if (finalizarCompra!=null) {
+    finalizarCompra.addEventListener('click',function(e){
+  
+        let productoLS;
+        productoLS = getProductoList();
+        let btnMedioPago=document.getElementById('medioPago');
+        let respuesta=document.getElementById('respuesta');
+        if (btnMedioPago.value!=0) {
+            document.getElementById('texto').innerHTML="Muchas gracias por realizar la compra, dirijase a la sucursal para hacer el retiro de su mercancia.";
+            const btncompra = document.getElementById('btnCompra');
+            btncompra.disabled = true; 
+            clearLocalStorage();
+            setTimeout( function() { window.location.href = "../index.html"; }, 8000 );
+            Toast2.fire({
+                icon: 'success',
+                title: 'Su compra fue satisfactoria.'
+              })
+        } else {
+            document.getElementById('texto').innerHTML="Seleccionar medio de pago para continuar";
+        }
+    
+    })
+} 
 
-})
-/**
- *  <option value="1">Paypal</option>
-                            <option value="2">Visa - Credito</option>
-                            <option value="3">Master - Credito</option>
-                            <option value="4">Efectivo en la sucursal</option>
- * 
- */
+const CargarProd = async ()=>{
+    const resp = await fetch('../js/data.js')
+    const data = await resp.json();
+    let productosHtml="";
+    data.forEach(producto => {
+        productosHtml+=`
+    <div class="producto">
+        <img class="imgProducto" src="${producto.imagen}" alt="${producto.nombre}" style="width: 200px; height: 200px;">
+        <div class="infoProducto">
+            <h4 class="tituloProducto">${producto.nombre}</h4>
+            <h6 class="precioProducto">${producto.precio}$</h6>
+            <p class="id">${producto.id}</p> 
+            <button type="button" onclick="addCart(this)" class="btn btn-outline-success botonProducto">Agregar</button>
+        </div>
+    </div>
+    `;
+    })
+    document.getElementById('seccionResultadosBusquedaProd').innerHTML=productosHtml;
+}
+
+if (document.getElementById('seccionResultadosBusquedaProd')!=null) {
+    CargarProd();
+} 
+
 /*
 - agregar productos local   -LISTO
 - modificar cantidad local  -LISTO
